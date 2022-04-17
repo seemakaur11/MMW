@@ -1,12 +1,17 @@
 #nav-bar{
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.7;
   height: 70px;
 }
 #li{
 color: white;
-padding-left: 3rem;}
+padding-left: 4rem;}
+
 .logo{
-  height: 70px;
+  height: 60px;
   margin-left: 3px;
+}
+.pBtn{
+  color: white;
+
 }
