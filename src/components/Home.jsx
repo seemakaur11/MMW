@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchData } from '../helper';
 import Web from './Web';
+import Works from './Works';
 
 function Home() {
     const [videoData, setvideoData] = useState([]);
@@ -27,7 +28,7 @@ function Home() {
             })
             }
             <Web />
-
+           <Works/>
         </div>
     )
 }
