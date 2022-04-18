@@ -97,7 +97,7 @@ function Web() {
                 </div>
             </section>
             <section>
-                <div className='container pt-5' id="web-star">
+                <div className='container py-5' id="web-star">
                     <div className='row py-5' id="row-star">
                         <div className='col-md-3' id="borderLine">
                             {user && user.length > 0 && user.map((img, id) => {
