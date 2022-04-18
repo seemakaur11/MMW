@@ -8,13 +8,18 @@
 
  background-color: rgb(75, 72, 72); 
 }
-
+.pBtn{
+  color: white;
+}
+.webSection{
+  background-color: black;
+}
 #navbar-btn{
-    border: none;
-    background-color: red;
-    color:white;
-   border-radius: 5px;
-   padding: 6px 8px;
+  border: none;
+  background-color: red;
+  color:white;
+  border-radius: 5px;
+  padding: 6px 8px;
   margin-left: 4rem;
   
 }
@@ -22,5 +27,48 @@
   width: 35%;
  margin-left: 5rem;
   
+}
+.web-img{
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+}
+#web-star{
+  text-align: center;
+  align-items: center;
+}
+#row-star{
+  border: 1px solid rgb(131, 128, 128);
+  border-radius: 12px;
+}
+#countUp{
+color: white;
+font-size: 32px;
+font-weight: 600;
+}
+#clientTag{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+#borderLine{
+  border-right: 1px solid rgb(131, 128, 128);
+}
+#h1content{
+  color:#C8C8C8;
+}
+#true-circle{
+  color: orangered;
+  font-size: 15px;
+}
+#pTag{
+  border: 1px solid rgb(131, 128, 128);
+  border-radius: 12px;
+}
+#pTag1{
+  text-align: center;
+  color: white;
+  line-height: 1.5em;
 }
 
