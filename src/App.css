@@ -71,4 +71,19 @@ font-weight: 600;
   color: white;
   line-height: 1.5em;
 }
+#right-tic{
+  color: orangered;
+  font-size: 18px;
+}
+#paragraph{
+  color: white;
+  line-height: 2em;
+  font-size: 15px;
+  font-family: "Montserrat", Sans-serif;
+}
+#sliderTag{
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+}
 

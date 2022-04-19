@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchData, contentData } from '../helper';
 import CountUp from 'react-countup';
 
+
 function Web() {
     // images hooks
     const [webData, setwebData] = useState([]);
@@ -13,13 +14,28 @@ function Web() {
     // content hooks
     const [title, setTitle] = useState([]);
     const [pTag, setPTag] = useState([]);
+    const [pTag1, setPTag1] = useState([]);
+    const [paragraph, setParagraph] = useState([]);
+    const [paragraph1, setParagraph1] = useState([]);
+
     useEffect(() => {
         async function content() {
             const contData = await contentData();
+            // title
             const filterTitle = contData.filter(data => data.meta_key === "section_1_title" && data);
             setTitle(filterTitle);
+            // p tag
             const filterTag = contData.filter(data => data.meta_key === "section_1_tag_1" && data);
             setPTag(filterTag)
+            //ptag1
+            const filterTag1 = contData.filter(data => data.meta_key === "section_1_tag_2" && data);
+            setPTag1(filterTag1)
+            // paragraph 
+            const filterP = contData.filter(data => data.meta_key === "section_1_p_1" && data);
+            setParagraph(filterP)
+            // paragraph 1
+            const filterP1 = contData.filter(data => data.meta_key === "section_1_p_2" && data);
+            setParagraph1(filterP1)
         }
         content()
     }, [])
@@ -46,7 +62,7 @@ function Web() {
     }, [])
 
     return (
-        <div className='webSection'>
+        <div className='webSection m-0 p-0'>
             <section>
                 <div className='container pt-5'>
                     <div className='row'>
@@ -59,6 +75,7 @@ function Web() {
                                 )
                             })
                             }
+
                         </div>
                         <div className='col-md-6'>
                             {title && title.length > 0 && title.map((head, id) => {
@@ -69,29 +86,73 @@ function Web() {
                                 )
                             })
                             }
-                            <div className='row'>
+                            <div className='pt-3'>
+                                <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+                                    <div className="carousel-inner">
+                                        <div className="carousel-item active">
+                                            <h1 id="sliderTag">Complete Web Solution Services Australia</h1>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <h1 id="sliderTag">Bringing in innovation to web design</h1>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <h1 id="sliderTag">Infusing creativity in your online space</h1>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <h1 id="sliderTag"> Captivating designs that tell stories</h1>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <h1 id="sliderTag"> Prioritising customer satisfaction all along</h1>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className='row pt-3'>
                                 <div className='col-md-5' id="pTag">
                                     {pTag && pTag.length > 0 && pTag.map((head, id) => {
                                         return (
                                             <div key={id}>
-                                                <p className='pt-3' id="pTag1"><i aria-hidden="true" className="fas fa-check"></i>{head.meta_value}</p>
+                                                <p className='pt-3' id="pTag1"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
                                             </div>
                                         )
                                     })
                                     }
                                 </div>
-                                <div className='col-md-5 mx-4' id="pTag">
-                                    {pTag && pTag.length > 0 && pTag.map((head, id) => {
+                                <div className='col-md-5 ml-3' id="pTag">
+                                    {pTag1 && pTag1.length > 0 && pTag1.map((head, id) => {
                                         return (
                                             <div key={id}>
-                                                <p className='pt-3' id="pTag1"><i aria-hidden="true" className="fas fa-check"></i>{head.meta_value}</p>
+                                                <p className='pt-3' id="pTag1"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
                                             </div>
                                         )
                                     })
                                     }
                                 </div>
                             </div>
+                            <div className='row'>
+                                {paragraph && paragraph.length > 0 && paragraph.map((paragraph, id) => {
+                                    return (
+                                        <div key={id}>
+                                            <p className='pt-4' id="paragraph">{paragraph.meta_value}</p>
+                                        </div>
+                                    )
+                                })
+                                }
+                            </div>
+                            <div className='row'>
+                                {paragraph1 && paragraph1.length > 0 && paragraph1.map((paragraph, id) => {
+                                    return (
+                                        <div key={id}>
+                                            <p id="paragraph">{paragraph.meta_value}</p>
+                                        </div>
+                                    )
+                                })
 
+                                }
+
+                            </div>
                         </div>
                     </div>
                 </div>
