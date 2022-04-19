@@ -1,13 +1,15 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/Home';
-import NavbarData from './components/Navbar';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./components/Home";
+import Footer from "./components/footer";
+import NavbarData from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      <NavbarData/>
-    <Home/>
+      <NavbarData />
+      <Home />
+      <Footer />
     </div>
   );
 }

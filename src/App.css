@@ -2,6 +2,7 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 #nav{
@@ -87,3 +88,184 @@ font-weight: 600;
   font-weight: 700;
 }
 
+#footer-container{
+  background-color: black;
+  color: aliceblue;
+  width: 100%;
+  padding-left: 5rem;
+}
+#footer-s1 h4{
+  font-size: 30px;
+  color: red;
+  padding-bottom: 25px;
+}
+
+#footer-s1 i{
+  font-size: 20px;
+  padding-right: 7px;
+}
+
+#footer-s1 h6{
+  font-size: 20px;
+ margin-left: 1.6rem;
+  margin-top: -5px;
+}
+
+#footer-s2 h4{
+  font-size: 30px;
+  color: red;
+  padding-bottom: 25px;
+}
+#footer-s2 i{
+  font-size: 20px;
+  padding-right: 7px;
+}
+#footer-s2 h6{
+  font-size: 20px;
+ margin-left: 1.8rem;
+  margin-top: -5px;
+}
+
+#footer-s3 h4{
+  font-size: 30px;
+  color: red;
+  padding-bottom: 25px;
+}
+
+#footer-s3 p i{
+  
+ padding-right: 7px;
+ font-size: 15px;
+
+ 
+}
+#footer-s3 p {
+  
+ margin-top: -5px;
+  
+ }
+ #footer-s3 p:hover {
+  
+  color: red;
+  cursor: pointer;
+   
+  }
+
+ #footer-s3 p i:hover{
+  
+  color: red;
+ 
+  
+ }
+ #footer-s4 h5{
+line-height: 1.5;
+word-spacing: 5px;
+padding-right: 2rem;
+padding-bottom: 25px;
+ }
+ #footer-s4 h4{
+  border-bottom: 1px solid white;
+  width: 75%;
+  padding-bottom: 5px;
+  
+ }
+ #footer-s4 h4:hover{
+  color: red;
+  border-bottom: 1px solid red;
+ 
+ }
+ #footer-s4 i{
+   color: red;
+   font-size: 25px;
+   margin: 20px;
+ }
+ #footer-s4 i:hover{
+   color: white;
+ }
+ #footer-p1{
+   display: flex;
+ margin-top: -4rem;
+ 
+ }
+ 
+ #footer-p1 p{
+   padding-right:15px ;
+  
+ }
+ #footer-p1 p:hover{
+  color: red;
+ 
+ }
+ 
+ #footer-p1 p i{
+  padding-right:5px ;
+  color: red;
+ 
+}
+
+#footer-p2{
+  display: flex;
+
+}
+#footer-p2 p{
+  padding-right:15px ;
+  margin-top: -5px;
+ 
+}
+#footer-p2 p i{
+  padding-right:5px ;
+  color: red;
+ 
+}
+
+#footer-p3{
+  display: flex;
+
+}
+#footer-p3 p{
+  padding-right:15px ;
+  margin-top: -5px;
+}
+#footer-p3 p i{
+  padding-right:5px ;
+  color: red;
+ 
+}
+#footer-p3{
+  padding-bottom: 1.5rem;
+}
+#footer-logo{
+  background-color: gray;
+}
+#footer-logo1{
+ display: flex;
+ padding-top: 5px;
+ margin-left: -4rem;
+}
+#client{
+
+width: 55%;
+}
+#google{
+
+  width: 80%;
+  padding-top: 3px;
+  margin-left: -8rem;
+  }
+  #footer-logo-p{
+    display: flex;
+   margin-left: -3.5rem;
+   color: white;
+  }
+  #footer-logo-p p{
+    padding-right: 10px;
+   
+  }
+  #footer-logo-p p:hover{
+   color: red;
+   
+  }
+  #footer-container-logo-para{
+   background-color:#000000ed;
+   
+  }
