@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../helper";
+import Service from "./Service";
 import ServiceDelivery from "./ServiceDelivery";
 import Web from "./Web";
 import Works from "./Works";
-// import Lottie from "lottie-react";
-// import animation from './animation.json'
 
 function Home() {
   const [videoData, setvideoData] = useState([]);
@@ -40,11 +39,9 @@ function Home() {
           );
         })}
       <Web />
+      <Service />
       <Works />
       <ServiceDelivery />
-      {/* <div>
-                <Lottie animationData={animation} />;
-            </div> */}
     </div>
   );
 }
