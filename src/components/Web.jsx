@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { fetchData, contentData } from '../helper';
 import CountUp from 'react-countup';
 
-
 function Web() {
     // images hooks
     const [webData, setwebData] = useState([]);
@@ -17,6 +16,11 @@ function Web() {
     const [pTag1, setPTag1] = useState([]);
     const [paragraph, setParagraph] = useState([]);
     const [paragraph1, setParagraph1] = useState([]);
+    const [count1, setCount1] = useState([]);
+    const [count2, setCount2] = useState([]);
+    const [count3, setCount3] = useState([]);
+    const [count4, setCount4] = useState([]);
+    const [slide, setSlide] = useState([]);
 
     useEffect(() => {
         async function content() {
@@ -36,10 +40,24 @@ function Web() {
             // paragraph 1
             const filterP1 = contData.filter(data => data.meta_key === "section_1_p_2" && data);
             setParagraph1(filterP1)
+            //count1
+            const filterCount1 = contData.filter(data => data.meta_key === "section_1_count1" && data);
+            setCount1(filterCount1);
+            //count2
+            const filterCount2 = contData.filter(data => data.meta_key === "section_1_count2" && data);
+            setCount2(filterCount2);
+            //count3
+            const filterCount3 = contData.filter(data => data.meta_key === "section_1_count3" && data);
+            setCount3(filterCount3);
+            //count4
+            const filterCount4 = contData.filter(data => data.meta_key === "section_1_count4" && data);
+            setCount4(filterCount4);
+            //slider 
+            const filterSlider = contData.filter(data => data.meta_key === "section_1_slider_items" && data);
+            setSlide(filterSlider);
         }
         content()
     }, [])
-
     useEffect(() => {
         async function images() {
             const webData = await fetchData();
@@ -90,20 +108,75 @@ function Web() {
                                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
-                                            <h1 id="sliderTag">Complete Web Solution Services Australia</h1>
+                                            {
+                                                slide && slide.length > 0 && slide.map((value, id) => {
+                                                    const slider = value.meta_value;
+                                                    const slideVal = slider.split(/[.,!,?]/);
+                                                    const slide1 = slideVal;
+                                                    return (
+                                                        <div key={id}>
+                                                            <h1 id="sliderTag">{slide1[0]}</h1>
+                                                        </div>
+                                                    )
+                                                }
+                                                )
+                                            }
                                         </div>
                                         <div className="carousel-item">
-                                            <h1 id="sliderTag">Bringing in innovation to web design</h1>
+                                            {slide && slide.length > 0 && slide.map((value, id) => {
+                                                const slider = value.meta_value;
+                                                const slideVal = slider.split(/[.,!,?]/);
+                                                const slide2 = slideVal;
+                                                return (
+                                                    <div key={id}>
+                                                        <h1 id="sliderTag">{slide2[1]}</h1>
+                                                    </div>
+                                                )
+                                            }
+                                            )
+                                            }
                                         </div>
                                         <div className="carousel-item">
-                                            <h1 id="sliderTag">Infusing creativity in your online space</h1>
+                                            {slide && slide.length > 0 && slide.map((value, id) => {
+                                                const slider = value.meta_value;
+                                                const slideVal = slider.split(/[.,!,?]/);
+                                                const slide3 = slideVal;
+                                                return (
+                                                    <div key={id}>
+                                                        <h1 id="sliderTag">{slide3[2]}</h1>
+                                                    </div>
+                                                )
+                                            }
+                                            )
+                                            }
                                         </div>
                                         <div className="carousel-item">
-                                            <h1 id="sliderTag"> Captivating designs that tell stories</h1>
+                                            {slide && slide.length > 0 && slide.map((value, id) => {
+                                                const slider = value.meta_value;
+                                                const slideVal = slider.split(/[.,!,?]/);
+                                                const slide4 = slideVal;
+                                                return (
+                                                    <div key={id}>
+                                                        <h1 id="sliderTag">{slide4[3]}</h1>
+                                                    </div>
+                                                )
+                                            }
+                                            )
+                                            }
                                         </div>
                                         <div className="carousel-item">
-                                            <h1 id="sliderTag"> Prioritising customer satisfaction all along</h1>
-
+                                            {slide && slide.length > 0 && slide.map((value, id) => {
+                                                const slider = value.meta_value;
+                                                const slideVal = slider.split(/[.,!,?]/);
+                                                const slide5 = slideVal;
+                                                return (
+                                                    <div key={id}>
+                                                        <h1 id="sliderTag">{slide5[4]}</h1>
+                                                    </div>
+                                                )
+                                            }
+                                            )
+                                            }
                                         </div>
                                     </div>
 
@@ -171,7 +244,14 @@ function Web() {
                             }
                             <div>
                                 <h2 className='pt-4' id="countUp"><CountUp start={0} end={10} duration={1} />+</h2>
-                                <h2 className='pt-3' id="clientTag">Years Of Expertise</h2>
+                                {count1 && count1.length > 0 && count1.map((value, id) => {
+                                    return (
+                                        <div key={id}>
+                                            <h2 className='pt-3' id="clientTag">{value.meta_value}</h2>
+                                        </div>
+                                    )
+                                })
+                                }
                             </div>
                         </div>
                         <div className='col-md-3' id="borderLine">
@@ -185,7 +265,14 @@ function Web() {
                             }
                             <div>
                                 <h2 className='pt-4' id="countUp"><CountUp start={0} end={100} duration={1} />+</h2>
-                                <h2 className='pt-3' id="clientTag">Australian Owned</h2>
+                                {count2 && count2.length > 0 && count2.map((value, id) => {
+                                    return (
+                                        <div key={id}>
+                                            <h2 className='pt-3' id="clientTag">{value.meta_value}</h2>
+                                        </div>
+                                    )
+                                })
+                                }
                             </div>
                         </div>
                         <div className='col-md-3' id="borderLine">
@@ -199,7 +286,14 @@ function Web() {
                             }
                             <div>
                                 <h2 className='pt-4' id="countUp"><CountUp start={0} end={5} duration={1} />-Star rated</h2>
-                                <h2 className='pt-3' id="clientTag">Web Design Agency​</h2>
+                                {count3 && count3.length > 0 && count3.map((value, id) => {
+                                    return (
+                                        <div key={id}>
+                                            <h2 className='pt-3' id="clientTag">{value.meta_value}</h2>
+                                        </div>
+                                    )
+                                })
+                                }
                             </div>
                         </div>
                         <div className='col-md-3'>
@@ -213,7 +307,14 @@ function Web() {
                             }
                             <div>
                                 <h2 className='pt-4' id="countUp"><CountUp start={0} end={800} duration={1} />+</h2>
-                                <h2 className='pt-3' id="clientTag">Satisfied Clients</h2>
+                                {count4 && count4.length > 0 && count4.map((value, id) => {
+                                    return (
+                                        <div key={id}>
+                                            <h2 className='pt-3' id="clientTag">{value.meta_value}</h2>
+                                        </div>
+                                    )
+                                })
+                                }
                             </div>
                         </div>
                     </div>

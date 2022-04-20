@@ -21,7 +21,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <div className="container-fluid pt-5 pl-5" id="footer-container">
         <div className="row pt-4 pl-3">
           <div className="col-md-3" id="footer-s1">
@@ -143,7 +143,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Footer;

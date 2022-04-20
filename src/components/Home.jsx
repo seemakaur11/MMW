@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { fetchData } from '../helper';
 import Web from './Web';
 import Works from './Works';
+// import Lottie from "lottie-react";
+// import animation from './animation.json'
 
 function Home() {
     const [videoData, setvideoData] = useState([]);
@@ -28,7 +30,11 @@ function Home() {
             })
             }
             <Web />
-           <Works/>
+            <Works />
+
+            {/* <div>
+                <Lottie animationData={animation} />;
+            </div> */}
         </div>
     )
 }
