@@ -104,7 +104,7 @@ function Web() {
                                 )
                             })
                             }
-                            <div className='pt-3'>
+                            <div className='py-3'>
                                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
@@ -182,23 +182,23 @@ function Web() {
 
                                 </div>
                             </div>
-                            <div className='container py-4'>
+                            <div className='container'>
                                 <div className='row'>
                                     <div className='col-lg-5 mb-3' >
                                         {pTag && pTag.length > 0 && pTag.map((head, id) => {
                                             return (
                                                 <div key={id}>
-                                                    <p className='py-2' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
+                                                    <p className='py-2 ' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
                                                 </div>
                                             )
                                         })
                                         }
                                     </div>
                                     <div className='col-lg-5 mb-5' >
-                                        {pTag && pTag.length > 0 && pTag.map((head, id) => {
+                                        {pTag1 && pTag1.length > 0 && pTag1.map((head, id) => {
                                             return (
                                                 <div key={id}>
-                                                    <p className='py-2' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
+                                                    <p className='py-2 mx-1' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
                                                 </div>
                                             )
                                         })
