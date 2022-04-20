@@ -266,3 +266,108 @@ width: 55%;
    background-color:#000000ed;
    
   }
+  #service-delivery{
+    background-color: rgb(230, 232, 236);
+   
+     }
+   
+     #service-delivery h5{
+   text-align: center;
+   padding-top: 2rem;
+     }
+   
+     #service-delivery h5 i{
+      
+       padding-right: 5px;
+       color: red;
+         }
+   
+         #service-delivery h1{
+        text-align: center;
+           padding-top: 1rem;
+         padding-bottom: 5rem;
+         font-size: 43px;
+             }
+   
+     #logo1{
+       width: 70%;
+       margin-bottom: 30px;
+       filter: grayscale(1);
+      
+     }
+     #logo1:hover{
+       filter: none;
+      }
+     #logo2{
+       width: 70%;
+       margin-bottom: 30px;
+       filter: grayscale(1);
+     }
+     #logo2:hover{
+       filter: none;
+      }
+     #logo3{
+       width: 70%;
+       margin-bottom: 30px;
+       filter: grayscale(1);
+     }
+     #logo3:hover{
+       filter: none;
+      }
+     #logo4{
+       width: 70%;
+       margin-bottom: 30px;
+       filter: grayscale(1);
+     }
+     #logo4:hover{
+       filter: none;
+      }
+     #logo5{
+       width: 70%;
+       margin-bottom: 30px;
+       filter: grayscale(1);
+     }
+     #logo5:hover{
+       filter: none;
+      }
+     #logo6{
+       width: 70%;
+       margin-bottom: 30px;
+       filter: grayscale(1);
+     }
+     #logo6:hover{
+       filter: none;
+      }
+     #logo7{
+       width: 70%;
+       margin-bottom: 30px;
+       filter: grayscale(1);
+     }
+     #logo7:hover{
+       filter: none;
+      }
+     #logo8{
+       width: 70%;
+       margin-bottom: 30px;
+       filter: grayscale(1);
+     }
+     #logo8:hover{
+       filter: none;
+      }
+     #logo9{
+       width: 70%;
+       margin-bottom: 30px;
+       filter: grayscale(1);
+     }
+     #logo9:hover{
+       filter: none;
+      }
+     #logo10{
+       width: 70%;
+       margin-bottom: 7rem;
+       filter: grayscale(1);
+     }
+     #logo10:hover{
+       filter: none;
+      }
+  
