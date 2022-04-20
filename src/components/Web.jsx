@@ -84,18 +84,18 @@ function Web() {
             <section>
                 <div className='container pt-5'>
                     <div className='row'>
-                        <div className='col-md-6'>
+                        <div className='col-lg-6'>
                             {webData && webData.length > 0 && webData.map((img, id) => {
                                 return (
                                     <div key={id}>
-                                        <img src={img.guid} alt='web-image' className='web-img' />
+                                        <img src={img.guid} alt='web-image' className='img-fluid rounded-pill' />
                                     </div>
                                 )
                             })
                             }
 
                         </div>
-                        <div className='col-md-6'>
+                        <div className='col-lg-6'>
                             {title && title.length > 0 && title.map((head, id) => {
                                 return (
                                     <div key={id} id="h1content">
@@ -182,27 +182,30 @@ function Web() {
 
                                 </div>
                             </div>
-                            <div className='row pt-3'>
-                                <div className='col-md-5' id="pTag">
-                                    {pTag && pTag.length > 0 && pTag.map((head, id) => {
-                                        return (
-                                            <div key={id}>
-                                                <p className='pt-3' id="pTag1"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
-                                            </div>
-                                        )
-                                    })
-                                    }
+                            <div className='container py-4'>
+                                <div className='row'>
+                                    <div className='col-lg-5 mb-3' >
+                                        {pTag && pTag.length > 0 && pTag.map((head, id) => {
+                                            return (
+                                                <div key={id}>
+                                                    <p className='py-2' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
+                                                </div>
+                                            )
+                                        })
+                                        }
+                                    </div>
+                                    <div className='col-lg-5 mb-5' >
+                                        {pTag && pTag.length > 0 && pTag.map((head, id) => {
+                                            return (
+                                                <div key={id}>
+                                                    <p className='py-2' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
+                                                </div>
+                                            )
+                                        })
+                                        }
+                                    </div>
                                 </div>
-                                <div className='col-md-5 ml-3' id="pTag">
-                                    {pTag1 && pTag1.length > 0 && pTag1.map((head, id) => {
-                                        return (
-                                            <div key={id}>
-                                                <p className='pt-3' id="pTag1"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
-                                            </div>
-                                        )
-                                    })
-                                    }
-                                </div>
+
                             </div>
                             <div className='row'>
                                 {paragraph && paragraph.length > 0 && paragraph.map((paragraph, id) => {
@@ -233,7 +236,7 @@ function Web() {
             <section>
                 <div className='container py-5' id="web-star">
                     <div className='row py-5' id="row-star">
-                        <div className='col-md-3' id="borderLine">
+                        <div className='col-lg-3 mb-5' id="borderLine">
                             {user && user.length > 0 && user.map((img, id) => {
                                 return (
                                     <div key={id}>
@@ -254,7 +257,7 @@ function Web() {
                                 }
                             </div>
                         </div>
-                        <div className='col-md-3' id="borderLine">
+                        <div className='col-lg-3 mb-5' id="borderLine">
                             {users && users.length > 0 && users.map((img, id) => {
                                 return (
                                     <div key={id}>
@@ -275,7 +278,7 @@ function Web() {
                                 }
                             </div>
                         </div>
-                        <div className='col-md-3' id="borderLine">
+                        <div className='col-lg-3 mb-5' id="borderLine">
                             {star && star.length > 0 && star.map((img, id) => {
                                 return (
                                     <div key={id}>
@@ -296,7 +299,7 @@ function Web() {
                                 }
                             </div>
                         </div>
-                        <div className='col-md-3'>
+                        <div className='col-lg-3 mb-5'>
                             {clients && clients.length > 0 && clients.map((img, id) => {
                                 return (
                                     <div key={id}>

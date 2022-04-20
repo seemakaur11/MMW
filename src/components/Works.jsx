@@ -1,8 +1,9 @@
 import React from 'react'
-import { fetchData } from '../helper';
+import { fetchData, contentData } from '../helper';
 import { useState, useEffect } from 'react';
 
 function Works() {
+  //images hooks//
   const [unitedTools, setUnitedTools] = useState([]);
   const [corbins, setCorbins] = useState([]);
   const [rgland, setRgland] = useState([]);
@@ -11,6 +12,17 @@ function Works() {
   const [darebin, setDarebin] = useState([]);
   const [carrabba, setCarrabba] = useState([]);
   const [dal, setDal] = useState([]);
+  //content hooks//
+  const [workstag, setWorkstag] = useState([])
+
+  useEffect(() => {
+    async function content() {
+      const worksContent = await contentData();
+      const filterworkstag = worksContent.filter(data => data.meta_key === 'section_1_works' && data)
+      setWorkstag(filterworkstag)
+    }
+    content()
+  }, [])
 
   useEffect(() => {
     async function images() {
@@ -82,18 +94,29 @@ function Works() {
       <div className='container-fluid' id='works'>
         <div className='container'>
           <div className='py-5'>
-            <div>
-              <h1>Latest Work</h1>
+            <div id='heroTag'>
+              {workstag && workstag.length > 0 && workstag.map((head, id) => {
+                return (
+                  <div key={id}>
+                    <h1 >{head.meta_value}</h1>
+                  </div>
+                )
+              })
+              }
+
             </div>
           </div>
           <div className='row py-5'>
-            <div className='col-md-3'>
-              <div className='card'>
+            <div className='col-md-3 mb-5'>
+              <div className='card' >
                 <div className='card-body'>
-                  {unitedTools && unitedTools.length > 0 && unitedTools.map((img, id) => {
+                  {corbins && corbins.length > 0 && corbins.map((img, id) => {
                     return (
                       <div key={id}>
-                        <img src={img.guid} className="img-fluid" alt=''></img>
+                        <div><img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img></div>
+                        <div className='bg-text'>
+                          <h1>mukesh</h1>
+                        </div>
                       </div>
                     )
                   })}
@@ -106,7 +129,10 @@ function Works() {
                   {corbins && corbins.length > 0 && corbins.map((img, id) => {
                     return (
                       <div key={id}>
-                        <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
+                        <div><img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img></div>
+                        <div className='bg-text'>
+                          <h1>mukesh</h1>
+                        </div>
                       </div>
                     )
                   })}
@@ -119,7 +145,10 @@ function Works() {
                   {rgland && rgland.length > 0 && rgland.map((img, id) => {
                     return (
                       <div key={id}>
-                        <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
+                        <div><img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img></div>
+                        <div className='bg-text'>
+                          <h1>mukesh</h1>
+                        </div>
                       </div>
                     )
                   })}
@@ -132,7 +161,10 @@ function Works() {
                   {sunshine && sunshine.length > 0 && sunshine.map((img, id) => {
                     return (
                       <div key={id}>
-                        <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
+                        <div><img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img></div>
+                        <div className='bg-text'>
+                          <h1>mukesh</h1>
+                        </div>
                       </div>
                     )
                   })}
@@ -145,7 +177,10 @@ function Works() {
                   {ticgroup && ticgroup.length > 0 && ticgroup.map((img, id) => {
                     return (
                       <div key={id}>
-                        <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
+                        <div><img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img></div>
+                        <div className='bg-text'>
+                          <h1>mukesh</h1>
+                        </div>
                       </div>
                     )
                   })}
@@ -158,7 +193,10 @@ function Works() {
                   {darebin && darebin.length > 0 && darebin.map((img, id) => {
                     return (
                       <div key={id}>
-                        <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
+                        <div><img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img></div>
+                        <div className='bg-text'>
+                          <h1>mukesh</h1>
+                        </div>
                       </div>
                     )
                   })}
@@ -171,7 +209,10 @@ function Works() {
                   {carrabba && carrabba.length > 0 && carrabba.map((img, id) => {
                     return (
                       <div key={id}>
-                        <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
+                        <div><img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img></div>
+                        <div className='bg-text'>
+                          <h1>mukesh</h1>
+                        </div>
                       </div>
                     )
                   })}
@@ -184,7 +225,10 @@ function Works() {
                   {dal && dal.length > 0 && dal.map((img, id) => {
                     return (
                       <div key={id}>
-                        <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
+                        <div><img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img></div>
+                        <div className='bg-text'>
+                          <h1>mukesh</h1>
+                        </div>
                       </div>
                     )
                   })}

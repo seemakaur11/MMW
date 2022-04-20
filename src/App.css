@@ -66,11 +66,8 @@ font-weight: 600;
 #pTag{
   border: 1px solid rgb(131, 128, 128);
   border-radius: 12px;
-}
-#pTag1{
   text-align: center;
   color: white;
-  line-height: 1.5em;
 }
 #right-tic{
   color: orangered;
