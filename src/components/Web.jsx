@@ -88,7 +88,7 @@ function Web() {
                             {webData && webData.length > 0 && webData.map((img, id) => {
                                 return (
                                     <div key={id}>
-                                        <img src={img.guid} alt='web-image' className='img-fluid rounded-pill' />
+                                        <img src={img.guid} alt='web-dev' className='img-fluid rounded-pill' />
                                     </div>
                                 )
                             })
@@ -104,7 +104,7 @@ function Web() {
                                 )
                             })
                             }
-                            <div className='py-3'>
+                            <div className='pt-3'>
                                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
@@ -188,7 +188,7 @@ function Web() {
                                         {pTag && pTag.length > 0 && pTag.map((head, id) => {
                                             return (
                                                 <div key={id}>
-                                                    <p className='py-2 ' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
+                                                    <p className='py-2 mx-1' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
                                                 </div>
                                             )
                                         })
@@ -198,7 +198,7 @@ function Web() {
                                         {pTag1 && pTag1.length > 0 && pTag1.map((head, id) => {
                                             return (
                                                 <div key={id}>
-                                                    <p className='py-2 mx-1' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
+                                                    <p className='py-2 mx-2' id="pTag"><i aria-hidden="true" className="fas fa-check mx-2" id="right-tic"></i>{head.meta_value}</p>
                                                 </div>
                                             )
                                         })
@@ -240,7 +240,7 @@ function Web() {
                             {user && user.length > 0 && user.map((img, id) => {
                                 return (
                                     <div key={id}>
-                                        <img src={img.guid} alt='user-image' className='user-img' />
+                                        <img src={img.guid} alt='web-user' className='user-img' />
                                     </div>
                                 )
                             })
@@ -261,7 +261,7 @@ function Web() {
                             {users && users.length > 0 && users.map((img, id) => {
                                 return (
                                     <div key={id}>
-                                        <img src={img.guid} alt='users-image' className='users-img' />
+                                        <img src={img.guid} alt='web-users' className='users-img' />
                                     </div>
                                 )
                             })
@@ -282,7 +282,7 @@ function Web() {
                             {star && star.length > 0 && star.map((img, id) => {
                                 return (
                                     <div key={id}>
-                                        <img src={img.guid} alt='user-image' className='user-img' />
+                                        <img src={img.guid} alt='user-web' className='user-img' />
                                     </div>
                                 )
                             })
@@ -303,7 +303,7 @@ function Web() {
                             {clients && clients.length > 0 && clients.map((img, id) => {
                                 return (
                                     <div key={id}>
-                                        <img src={img.guid} alt='clients-image' className='clients-img' />
+                                        <img src={img.guid} alt='clients-dev' className='clients-img' />
                                     </div>
                                 )
                             })

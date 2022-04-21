@@ -26,7 +26,7 @@ function NavbarData() {
           navData.map((img, id) => {
             return (
               <div key={id}>
-                <img src={img.guid} alt="logo-image" id="logo" />
+                <img src={img.guid} alt="logo" id="logo" />
               </div>
             );
           })}
