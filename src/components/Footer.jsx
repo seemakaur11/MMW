@@ -138,8 +138,14 @@ const Footer = () => {
               })}
           </div>
           <div id="footer-logo-p">
-            <p>Terms & Conditions </p>
-            <p>Privacy Policy</p>
+            <div id="footer-logo-p1">
+              <p>Terms & Conditions </p>
+              <p>Privacy Policy</p>
+            </div>
+            <div id="footer-logo-p2">
+              <p>Copyright © 2022 Make My Website. All Rights Reserved. </p>
+              <p>Web Design Melbourne Make My Website</p>
+            </div>
           </div>
         </div>
       </div>
