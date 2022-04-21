@@ -418,6 +418,18 @@
   #footer-logo-p p:hover{
   color: red;
   }
+
+  #footer-logo-p1{
+    display: flex;
+  }
+  #footer-logo-p2{
+   margin-top: -3rem;
+   margin-right: -4rem;
+ }
+
+
+
+
   #footer-container-logo-para{
   background-color:#000000ed;
   }
