@@ -22,3 +22,15 @@ export const contentData = async() => {
         console.log("error ==>",error)
     }
 }
+///casestudy data
+export const caseStudyData = async() => {
+    try{
+        const response = await fetch('https://makemywebsiteaustralia.com.au/mmw/wp-json/wp/v2/casestudy')
+        console.log('responce==============>',response)
+         const json = await response.json();
+         return json;
+    }
+    catch(error){
+        console.log("error ==>",error)
+    }
+}

@@ -251,6 +251,7 @@ width: 55%;
   }
   #footer-logo-p{
     display: flex;
+    justify-content: space-between;
    margin-left: -3.5rem;
    color: white;
   }
@@ -258,6 +259,14 @@ width: 55%;
     padding-right: 10px;
    
   }
+#footer-term-div{
+  display: flex;
+}
+#footer-term-div2{
+  margin-top: -3rem;
+  margin-right: -6rem;
+}
+
   #footer-logo-p p:hover{
    color: red;
    
@@ -370,6 +379,128 @@ width: 55%;
      #logo10:hover{
        filter: none;
       }
+    
+      .responsive{
+        height: 80%;
+        margin-left: -13rem;
+       
+      
+      }
+      #mmw-img-div{
+      background-attachment: fixed;
+      background-size: cover;
+       
+      }
+      #mmw-content-main-div{
+        margin-top: 5rem;
+      }
+
+
+      #mmw-content-div{
+        background-color: black;
+        opacity: 0.7;
+     
+      }
+      #mmw-content-div h1{
+        padding-left: 25px;
+        padding-top: 10px;
+        font-weight: bold;
+        color: white;
+      }
+      #mmw-content-div h6{
+        padding-left: 25px;
+        padding-top: 15px;
+        font-size: 18px;
+        width: 80%;
+        line-height: 1.8;
+        color: white;
+      }
+      #mmw-btn{
+        border: none;
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-bottom: 3.5rem;
+        padding: 15px 25px;
+        font-weight: 600;
+      }
+
+      #mmw-logo-container{
+        background-color: black;
+        opacity: 0.8;
+       
+        margin-top: 6rem;
+        color:  white;
+
+      }
+      #mmw-logo-container h1{
+      text-align: center;
+      padding: 10px;
+      }
+      #mmw-logo-container h6{
+        text-align: center;
+        padding: 10px;
+        }
+        #mmw-logos{
+          width: 100%;
+          height: 150px;
+         margin-left: 6rem;
+         margin-bottom: 1.8rem;
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #footer-logo-p{
+    display: flex;
+   margin-left: -3.5rem;
+   color: white;
+  }
+  #footer-logo-p p{
+    padding-right: 10px;
+   
+  }
+  #footer-logo-p p:hover{
+   color: red;
+   
+  }
+  #footer-container-logo-para{
+   background-color:#000000ed;
+   
+  }
+  #service-delivery{
+    background-color: rgb(230, 232, 236);
+   
+     }
+   
+   #service-delivery h5{
+   text-align: center;
+   padding-top: 2rem;
+     }
+   
+     #service-delivery h5 i{
+      
+       padding-right: 5px;
+       color: red;
+         }
+   
+         #service-delivery h1{
+        text-align: center;
+           padding-top: 1rem;
+         padding-bottom: 5rem;
+         font-size: 43px;
+             }
+   
+     
       #viewBtn{
         border: none;
         outline: none;
@@ -459,4 +590,74 @@ width: 55%;
       width: 180px;
       height: 50px;
       background-color: rgb(43, 40, 40);
+    }
+
+#web-img-big{
+  position: relative;
+}
+
+
+    #web-img-small{
+      position: absolute;
+      top: 35%;
+      left: -6%;
+      padding-top: 25px;
+      text-align: center;
+      background-color: #222020;
+      border-radius: 50%;
+      height: 25%;
+      width: 25%;
+    }
+
+    #web-img-small1{
+      margin-top: 5px;
+      margin-bottom: -5px;
+      color: red;
+      font-size: 15px;
+    }
+    
+    #web-img-small2{
+     
+      margin-bottom: -7px;
+      font-size: 25px;
+      color: white;
+    }
+    
+    #web-img-small3{
+     
+      color: white;
+      font-size: 15px;
+    }
+    .single-album{
+      position: relative;
+      overflow-y: auto;
+      max-height: 250px;
+    }
+    .album-img{
+      position: relative;
+      overflow: hidden;
+    }
+    .album-content{
+      height: 40px;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+    text-transform: uppercase;
+     
+      background: black;
+      opacity: 0.7;
+    }
+    .album-img img{
+      transition: .4s;
+    }
+    .album-title h3{
+      font-size: 16px;
+      color: #fff;
+     
+    }
+    .album-title{
+      transition: .5s;
     }

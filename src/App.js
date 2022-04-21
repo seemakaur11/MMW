@@ -4,11 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import NavbarData from "./components/Navbar";
-
 function App() {
   return (
     <div>
-      <NavbarData />
+       <NavbarData />
       <Home />
     <Footer />
     </div>
