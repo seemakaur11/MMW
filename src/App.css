@@ -661,3 +661,10 @@ width: 55%;
     .album-title{
       transition: .5s;
     }
+    #works{
+      background-color: black;
+    }
+    #heroTag h1{
+      color: white;
+      font-size: 5em;
+    }

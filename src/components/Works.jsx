@@ -186,10 +186,7 @@ function Works() {
                                     {unitedTools && unitedTools.length > 0 && unitedTools.map((img, id) => {
                                         return (
                                             <div key={id}>
-                                                <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
-                                                {/* <div className='bg-text'>
-                                                   <h3>{unitedtitle}</h3>
-                                                    </div> */}
+                                                <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>                                       
                                             </div>
                                         )
                                     })}
@@ -207,10 +204,7 @@ function Works() {
                                     {dal && dal.length > 0 && dal.map((img, id) => {
                                         return (
                                             <div key={id}>
-                                                <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
-                                                {/* <div className='bg-text'>
-                                                   <h3>{dal}</h3>
-                                                    </div> */}
+                                                <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>                                        
                                             </div>
                                         )
                                     })}
@@ -228,10 +222,7 @@ function Works() {
                                     {darebin && darebin.length > 0 && darebin.map((img, id) => {
                                         return (
                                             <div key={id}>
-                                                <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
-                                                {/* <div className='bg-text'>
-                                                   <h3>{unitedtitle}</h3>
-                                                    </div> */}
+                                                <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>                                          
                                             </div>
                                         )
                                     })}
@@ -250,9 +241,6 @@ function Works() {
                                         return (
                                             <div key={id}>
                                                 <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
-                                                {/* <div className='bg-text'>
-                                                   <h3>{unitedtitle}</h3>
-                                                    </div> */}
                                             </div>
                                         )
                                     })}
@@ -271,9 +259,6 @@ function Works() {
                                         return (
                                             <div key={id}>
                                                 <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
-                                                {/* <div className='bg-text'>
-                                                   <h3>{unitedtitle}</h3>
-                                                    </div> */}
                                             </div>
                                         )
                                     })}
@@ -292,9 +277,6 @@ function Works() {
                                         return (
                                             <div key={id}>
                                                 <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
-                                                {/* <div className='bg-text'>
-                                                   <h3>{unitedtitle}</h3>
-                                                    </div> */}
                                             </div>
                                         )
                                     })}
@@ -312,10 +294,7 @@ function Works() {
                                     {ticgroup && ticgroup.length > 0 && ticgroup.map((img, id) => {
                                         return (
                                             <div key={id}>
-                                                <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
-                                                {/* <div className='bg-text'>
-                                                   <h3>{unitedtitle}</h3>
-                                                    </div> */}
+                                                <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>                                        
                                             </div>
                                         )
                                     })}
@@ -334,9 +313,6 @@ function Works() {
                                         return (
                                             <div key={id}>
                                                 <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>
-                                                {/* <div className='bg-text'>
-                                                   <h3>{unitedtitle}</h3>
-                                                    </div> */}
                                             </div>
                                         )
                                     })}
