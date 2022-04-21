@@ -71,6 +71,13 @@ const Mmw = () => {
                 <button type="button" id="mmw-btn">
                   GET A QUOTE
                 </button>
+
+                <div id="main-elemontor">
+                  <div id="rcircle">
+                    <div id="welcome-shape-1"></div>
+                    <div id="welcome-shape-2"></div>
+                  </div>
+                </div>
               </div>
 
               <div
