@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../helper";
+import Mmw from "./Mmw";
 import Service from "./Service";
 import ServiceDelivery from "./ServiceDelivery";
 import Web from "./Web";
@@ -41,6 +42,7 @@ function Home() {
       <Web />
       <Service />
       <Works />
+      <Mmw />
       <ServiceDelivery />
     </div>
   );
