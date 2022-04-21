@@ -441,24 +441,11 @@ width: 55%;
         padding: 10px;
         }
         #mmw-logos{
-          width: 100%;
-          height: 150px;
+        width: 100%;
+        height: 150px;
          margin-left: 6rem;
          margin-bottom: 1.8rem;
-        
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
   #footer-logo-p{
     display: flex;
@@ -488,17 +475,16 @@ width: 55%;
      }
    
      #service-delivery h5 i{
-      
        padding-right: 5px;
        color: red;
          }
    
          #service-delivery h1{
         text-align: center;
-           padding-top: 1rem;
-         padding-bottom: 5rem;
-         font-size: 43px;
-             }
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+        font-size: 43px;
+       }
    
      
       #viewBtn{
@@ -506,7 +492,6 @@ width: 55%;
         outline: none;
         color: white;
         background-color: black;
-     
         height: 50px;
         width: 180px;
       }
@@ -517,18 +502,21 @@ width: 55%;
         background-color: rgb(230, 232, 236);
       }  
       #viewBtn1{
-        margin-left: 25em;
+        text-align: end;
       }
       #webDesignH1{
         text-align: center;
       }
       .flip-card {
         background-color: transparent;
-        width: 350px;
-        height: 350px;
+        width: 21rem;
+        height: 28rem;
         perspective: 1000px;
       }
-      
+      .flip-title{
+        font-size: 23px;
+        font-weight: 700;
+      }
       .flip-card-inner {
         position: relative;
         width: 100%;
@@ -554,15 +542,22 @@ width: 55%;
       .flip-card-front {
         background-color: white;
         color: black;
-        height: 380px; 
       }
       
       .flip-card-back {
         background-color: black;
         color: white;
         transform: rotateY(180deg);
-        height: 380px;
-        
+      }
+      #hosing{
+        width: 90%;
+        padding-top: 60px;
+        padding-bottom: 85px;
+      }
+      #hosing1{
+        width: 90%;
+        padding-top: 50px;
+        padding-bottom: 50px;
       }
     #serviceH1{
       font-size: 5em;
@@ -576,8 +571,12 @@ width: 55%;
     }
     #webParagraph{
       font-family:'Times New Roman', Times, serif;
-      font-size: 19px;
+      font-size: 17px;
       line-height: 2rem;
+      padding: 10px 10px;
+    }
+    #mainService{
+      display: flex;
     }
     #webBtn{
       outline: none;
@@ -595,8 +594,6 @@ width: 55%;
 #web-img-big{
   position: relative;
 }
-
-
     #web-img-small{
       position: absolute;
       top: 35%;
@@ -624,7 +621,6 @@ width: 55%;
     }
     
     #web-img-small3{
-     
       color: white;
       font-size: 15px;
     }
