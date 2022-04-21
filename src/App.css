@@ -570,4 +570,43 @@
   color: white;
   font-size: 15px;
   }
-  
+  .single-album{
+    position: relative;
+    overflow-y: auto;
+    max-height: 250px;
+  }
+  .album-img{
+    position: relative;
+    overflow: hidden;
+  }
+  .album-content{
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+  text-transform: uppercase;
+   
+    background: black;
+    opacity: 0.7;
+  }
+  .album-img img{
+    transition: .4s;
+  }
+  .album-title h3{
+    font-size: 16px;
+    color: #fff;
+   
+  }
+  .album-title{
+    transition: .5s;
+  }
+  #works{
+    background-color: black;
+  }
+  #heroTag h1{
+    color: white;
+    font-size: 5em;
+  }
