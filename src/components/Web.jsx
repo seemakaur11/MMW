@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { fetchData, contentData } from "../helper";
 import CountUp from "react-countup";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function Web() {
   // images hooks
@@ -307,7 +310,7 @@ function Web() {
                 user.length > 0 &&
                 user.map((img, id) => {
                   return (
-                    <div key={id}>
+                    <div key={id} data-aos="fade-left">
                       <img src={img.guid} alt="user" className="user-img" />
                     </div>
                   );
@@ -320,7 +323,7 @@ function Web() {
                   count1.length > 0 &&
                   count1.map((value, id) => {
                     return (
-                      <div key={id}>
+                      <div key={id} data-aos="fade-left">
                         <h2 className="pt-3" id="clientTag">
                           {value.meta_value}
                         </h2>
@@ -334,7 +337,7 @@ function Web() {
                 users.length > 0 &&
                 users.map((img, id) => {
                   return (
-                    <div key={id}>
+                    <div key={id} data-aos="fade-right">
                       <img src={img.guid} alt="users" className="users-img" />
                     </div>
                   );
@@ -347,7 +350,7 @@ function Web() {
                   count2.length > 0 &&
                   count2.map((value, id) => {
                     return (
-                      <div key={id}>
+                      <div key={id} data-aos="fade-right">
                         <h2 className="pt-3" id="clientTag">
                           {value.meta_value}
                         </h2>
@@ -361,7 +364,7 @@ function Web() {
                 star.length > 0 &&
                 star.map((img, id) => {
                   return (
-                    <div key={id}>
+                    <div key={id} data-aos="fade-right">
                       <img src={img.guid} alt="user" className="user-img" />
                     </div>
                   );
@@ -375,7 +378,7 @@ function Web() {
                   count3.length > 0 &&
                   count3.map((value, id) => {
                     return (
-                      <div key={id}>
+                      <div key={id} data-aos="fade-right">
                         <h2 className="pt-3" id="clientTag">
                           {value.meta_value}
                         </h2>
@@ -389,7 +392,7 @@ function Web() {
                 clients.length > 0 &&
                 clients.map((img, id) => {
                   return (
-                    <div key={id}>
+                    <div key={id} data-aos="fade-right">
                       <img
                         src={img.guid}
                         alt="clients"
@@ -406,7 +409,7 @@ function Web() {
                   count4.length > 0 &&
                   count4.map((value, id) => {
                     return (
-                      <div key={id}>
+                      <div key={id} data-aos="fade-right">
                         <h2 className="pt-3" id="clientTag">
                           {value.meta_value}
                         </h2>

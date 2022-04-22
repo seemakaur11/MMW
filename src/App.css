@@ -622,3 +622,24 @@
     color: white;
     font-size: 5em;
   }
+  #videoSection{
+    position: relative;
+  }
+  #lottieMessage{
+    position: absolute;
+    top: 67%;
+    height: 40%;
+    left: -2%;
+    position: fixed;
+    width: 20%;
+    z-index: 1;
+  }
+  #lottieContact{
+    position: absolute;
+    bottom: 30%;
+    height: 40%;
+    right: -4%;
+    position: fixed;
+    width: 20%;
+    z-index: 1;
+  }

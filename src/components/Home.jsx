@@ -5,6 +5,9 @@ import Service from "./Service";
 import ServiceDelivery from "./ServiceDelivery";
 import Web from "./Web";
 import Works from "./Works";
+import Lottie from "lottie-react";
+import Message from "../animation/Message.json";
+import Contact from "../animation/Contact.json";
 
 function Home() {
   const [videoData, setvideoData] = useState([]);
@@ -19,8 +22,9 @@ function Home() {
     }
     images();
   }, []);
+
   return (
-    <div>
+    <div id="videoSection">
       {videoData &&
         videoData.length > 0 &&
         videoData.map((img, id) => {
@@ -36,6 +40,8 @@ function Home() {
                 <source src={img.guid} type="video/mp4"></source>
                 <h1>jhgkj</h1>
               </video>
+              <div id="lottieMessage"><Lottie animationData={Message} loop={true} autoplay={true} /></div>
+              <div id="lottieContact"><Lottie animationData={Contact} loop={true} autoplay={true} /></div>
             </div>
           );
         })}
