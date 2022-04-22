@@ -122,7 +122,7 @@ function Web() {
                     <div key={id}>
                       <img
                         src={img.guid}
-                        alt="web-image"
+                        alt="ghnjhfk"
                         className="img-fluid rounded-pill"
                       />
                       <div id="web-img-small">
@@ -308,11 +308,7 @@ function Web() {
                 user.map((img, id) => {
                   return (
                     <div key={id}>
-                      <img
-                        src={img.guid}
-                        alt="user-image"
-                        className="user-img"
-                      />
+                      <img src={img.guid} alt="user" className="user-img" />
                     </div>
                   );
                 })}
@@ -339,11 +335,7 @@ function Web() {
                 users.map((img, id) => {
                   return (
                     <div key={id}>
-                      <img
-                        src={img.guid}
-                        alt="users-image"
-                        className="users-img"
-                      />
+                      <img src={img.guid} alt="users" className="users-img" />
                     </div>
                   );
                 })}
@@ -370,11 +362,7 @@ function Web() {
                 star.map((img, id) => {
                   return (
                     <div key={id}>
-                      <img
-                        src={img.guid}
-                        alt="user-image"
-                        className="user-img"
-                      />
+                      <img src={img.guid} alt="user" className="user-img" />
                     </div>
                   );
                 })}
@@ -404,7 +392,7 @@ function Web() {
                     <div key={id}>
                       <img
                         src={img.guid}
-                        alt="clients-image"
+                        alt="clients"
                         className="clients-img"
                       />
                     </div>
