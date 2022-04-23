@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchData, contentData } from "../helper";
 import CountUp from "react-countup";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
 
 function Web() {
   // images hooks
@@ -125,7 +122,7 @@ function Web() {
                     <div key={id}>
                       <img
                         src={img.guid}
-                        alt="ghnjhfk"
+                        alt="web-image"
                         className="img-fluid rounded-pill"
                       />
                       <div id="web-img-small">
@@ -310,8 +307,12 @@ function Web() {
                 user.length > 0 &&
                 user.map((img, id) => {
                   return (
-                    <div key={id} data-aos="fade-left">
-                      <img src={img.guid} alt="user" className="user-img" />
+                    <div key={id}>
+                      <img
+                        src={img.guid}
+                        alt="user-image"
+                        className="user-img"
+                      />
                     </div>
                   );
                 })}
@@ -323,7 +324,7 @@ function Web() {
                   count1.length > 0 &&
                   count1.map((value, id) => {
                     return (
-                      <div key={id} data-aos="fade-left">
+                      <div key={id}>
                         <h2 className="pt-3" id="clientTag">
                           {value.meta_value}
                         </h2>
@@ -337,8 +338,12 @@ function Web() {
                 users.length > 0 &&
                 users.map((img, id) => {
                   return (
-                    <div key={id} data-aos="fade-right">
-                      <img src={img.guid} alt="users" className="users-img" />
+                    <div key={id}>
+                      <img
+                        src={img.guid}
+                        alt="users-image"
+                        className="users-img"
+                      />
                     </div>
                   );
                 })}
@@ -350,7 +355,7 @@ function Web() {
                   count2.length > 0 &&
                   count2.map((value, id) => {
                     return (
-                      <div key={id} data-aos="fade-right">
+                      <div key={id}>
                         <h2 className="pt-3" id="clientTag">
                           {value.meta_value}
                         </h2>
@@ -364,8 +369,12 @@ function Web() {
                 star.length > 0 &&
                 star.map((img, id) => {
                   return (
-                    <div key={id} data-aos="fade-right">
-                      <img src={img.guid} alt="user" className="user-img" />
+                    <div key={id}>
+                      <img
+                        src={img.guid}
+                        alt="user-image"
+                        className="user-img"
+                      />
                     </div>
                   );
                 })}
@@ -378,7 +387,7 @@ function Web() {
                   count3.length > 0 &&
                   count3.map((value, id) => {
                     return (
-                      <div key={id} data-aos="fade-right">
+                      <div key={id}>
                         <h2 className="pt-3" id="clientTag">
                           {value.meta_value}
                         </h2>
@@ -392,10 +401,10 @@ function Web() {
                 clients.length > 0 &&
                 clients.map((img, id) => {
                   return (
-                    <div key={id} data-aos="fade-right">
+                    <div key={id}>
                       <img
                         src={img.guid}
-                        alt="clients"
+                        alt="clients-image"
                         className="clients-img"
                       />
                     </div>
@@ -409,7 +418,7 @@ function Web() {
                   count4.length > 0 &&
                   count4.map((value, id) => {
                     return (
-                      <div key={id} data-aos="fade-right">
+                      <div key={id}>
                         <h2 className="pt-3" id="clientTag">
                           {value.meta_value}
                         </h2>

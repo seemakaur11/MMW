@@ -13,17 +13,18 @@ function Service() {
             <section id="ourServiceMain">
                 <div className='container py-5'>
                     <div className='row'>
-                        <div id="mainService">
-                            <div className='col-md-6'>
+                      
+                            <div className='col-md-10'>
                                 <h1 id="serviceH1">Our Services</h1>
-                                <p id="serviceP">Our focus is on designing stunning, professional, and optimised websites to help you meet your business goals and succeed online.</p>
+                                <p id="serviceP">Our focus is on designing stunning, professional, 
+                                and optimised<br></br> websites to help you meet your business goals and succeed online.</p>
                             </div>
-                            <div className='col-md-6 pt-5 '>
+                            <div className='col-md-2 pt-5 '>
                                 <div id="viewBtn1">
                                     <button id="viewBtn">VIEW ALL SERVICES</button>
                                 </div>
                             </div>
-                        </div>
+                    
                     </div>
                     <div className='row py-4' id="web-animation">
                         <div className='col-md-4 mb-5'>

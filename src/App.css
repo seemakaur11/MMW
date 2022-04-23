@@ -457,7 +457,7 @@
   color: white;
   background-color: black;
   height: 50px;
-  width: 180px;
+  width: 160px;
   }
   #viewBtn:hover{
   background-color: red;
@@ -465,9 +465,6 @@
   #ourServiceMain{
   background-color: rgb(230, 232, 236);
   } 
-  #viewBtn1{
-  text-align: end;
-  }
   #webDesignH1{
   text-align: center;
   }
@@ -698,3 +695,9 @@
   40% {transform: translateX(-30px);} 
   60% {transform: translateX(-15px);} 
 } 
+  /* customer feedback */
+  #Heading{
+    text-align: center;
+    align-items: center;
+    color: #fff;
+  }

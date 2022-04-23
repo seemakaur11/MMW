@@ -307,7 +307,7 @@ function Works() {
                             </div>
                         </div>
                         <div className='col-md-3 mb-5'>
-                        <div className='single-album' >
+                        <div className='single-album'>
                                 <div className='album-img'>
                                     {rgland && rgland.length > 0 && rgland.map((img, id) => {
                                         return (

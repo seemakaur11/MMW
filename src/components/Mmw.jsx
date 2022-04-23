@@ -90,7 +90,7 @@ const Mmw = () => {
                   brands across the world and it enables us to bring the best to
                   <br></br> every business, every time.
                 </h6>
-                <div className="row">
+                <div className="row justify-content-center">
                   <div className="col-md-2">
                     {googlePartnerLogo &&
                       googlePartnerLogo.length > 0 &&
