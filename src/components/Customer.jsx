@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { fetchData } from '../helper'
+import { fetchData,testimonials } from '../helper'
 
 function Customer() {
     const [dal, setDal] = useState([]);
@@ -13,12 +13,12 @@ function Customer() {
 
     //useeffect images///
     useEffect(() => {
-        async function images() {
-            const dal = await fetchData();
-            const filterdal = dal.filter(data => data.ID === '34892' && data)
+        async function testimonials() {
+            const dal = await testimonials();
+            const filterdal = dal.filter(data => data.title === '34892' && data)
             setDal(filterdal)
         }
-        images()
+       testimonials()
     }, [])
     useEffect(() => {
         async function images() {
@@ -72,7 +72,7 @@ function Customer() {
                         ></i> Customer Feedback</p>
                         <div>
                             <h1>
-                            Hear from those who’ve had first-hand experiences with us
+                                Hear from those who’ve had first-hand experiences with us
                             </h1>
                         </div>
                      </div>
