@@ -1,8 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import "./App.css";
 import "./About.css";
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import NavbarData from "./components/Navbar";
