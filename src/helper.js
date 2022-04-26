@@ -33,6 +33,7 @@ export const caseStudyData = async () => {
         console.log("error ==>", error)
     }
 }
+////testimonials///
 export const testimonials = async () => {
     var array = [];
     try {
@@ -56,6 +57,18 @@ export const testimonials = async () => {
     } catch (error) {
         console.log("error ==>", error);
     }
+    ///about///
+    export const aboutData = async () => {
+        try {
+            const response = await fetch('https://makemywebsiteaustralia.com.au/mmw/wp-json/mo/v1/content/1227')
+            const json = await response.json();
+            return json;
+        }
+        catch (error) {
+            console.log("error ==>", error)
+        }
+    }
+
 
 
 
