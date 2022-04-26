@@ -28,66 +28,24 @@ function Works() {
             const unitedTools = await fetchData();
             const filterunitedTools = unitedTools.filter(data => data.ID === '42479' && data)
             setUnitedTools(filterunitedTools)
-        }
-        images()
-    }, [])
-    useEffect(() => {
-        async function images() {
-            const corbins = await fetchData();
             const filtercorbins = corbins.filter(data => data.ID === '39121' && data)
             setCorbins(filtercorbins)
-        }
-        images()
-    }, [])
-    useEffect(() => {
-        async function images() {
-            const rgland = await fetchData();
             const filterrgland = rgland.filter(data => data.ID === '39122' && data)
             setRgland(filterrgland)
-        }
-        images()
-    }, [])
-    useEffect(() => {
-        async function images() {
-            const sunshine = await fetchData();
             const filtersunshine = sunshine.filter(data => data.ID === '39123' && data)
             setSunshine(filtersunshine)
-        }
-        images()
-    }, [])
-    useEffect(() => {
-        async function images() {
-            const ticgroup = await fetchData();
             const filterticgroup = ticgroup.filter(data => data.ID === '39124' && data)
             setTicgroup(filterticgroup)
-        }
-        images()
-    }, [])
-    useEffect(() => {
-        async function images() {
-            const darebin = await fetchData();
             const filterdarebin = darebin.filter(data => data.ID === '39126' && data)
             setDarebin(filterdarebin)
-        }
-        images()
-    }, [])
-    useEffect(() => {
-        async function images() {
-            const carrabba = await fetchData();
             const filtercarrabba = carrabba.filter(data => data.ID === '39113' && data)
             setCarrabba(filtercarrabba)
-        }
-        images()
-    }, [])
-    useEffect(() => {
-        async function images() {
-            const dal = await fetchData();
             const filterdal = dal.filter(data => data.ID === '39120' && data)
             setDal(filterdal)
         }
         images()
     }, [])
-
+   
     ///content 
     useEffect(() => {
         async function content() {
@@ -96,72 +54,30 @@ function Works() {
             filterunitedtitle.map((rest) => {
                 return setUnitedTitle(rest.title.rendered);
             })
-        }
-        content()
-    }, [])
-    useEffect(() => {
-        async function content() {
-            const caseStudy = await caseStudyData();
             const filterdaltitle = caseStudy.filter(data => data.id === 32859 && data);
             filterdaltitle.map((rest) => {
                 return setDalTitle(rest.title.rendered);
             })
-        }
-        content()
-    }, [])
-    useEffect(() => {
-        async function content() {
-            const caseStudy = await caseStudyData();
             const filtercobrunstitle = caseStudy.filter(data => data.id === 33093 && data);
             filtercobrunstitle.map((rest) => {
                 return setCobrunsTitle(rest.title.rendered);
             })
-        }
-        content()
-    }, [])
-    useEffect(() => {
-        async function content() {
-            const caseStudy = await caseStudyData();
             const filterrglandtitle = caseStudy.filter(data => data.id === 33880 && data);
             filterrglandtitle.map((rest) => {
                 return setRglandTitle(rest.title.rendered);
             })
-        }
-        content()
-    }, [])
-    useEffect(() => {
-        async function content() {
-            const caseStudy = await caseStudyData();
             const filterdarebintitle = caseStudy.filter(data => data.id === 33944 && data);
             filterdarebintitle.map((rest) => {
                 return setDarebinTitle(rest.title.rendered);
             })
-        }
-        content()
-    }, [])
-    useEffect(() => {
-        async function content() {
-            const caseStudy = await caseStudyData();
             const filtercarabbatitle = caseStudy.filter(data => data.id === 33066 && data);
             filtercarabbatitle.map((rest) => {
                 return setCarabbaTitle(rest.slug);
             })
-        }
-        content()
-    }, [])
-    useEffect(() => {
-        async function content() {
-            const caseStudy = await caseStudyData();
             const filterticgrouptitle = caseStudy.filter(data => data.id === 33916 && data);
             filterticgrouptitle.map((rest) => {
                 return setTicgroupTitle(rest.title.rendered);
             })
-        }
-        content()
-    }, [])
-    useEffect(() => {
-        async function content() {
-            const caseStudy = await caseStudyData();
             const filtersunshinetitle = caseStudy.filter(data => data.id === 33905 && data);
             filtersunshinetitle.map((rest) => {
                 return setSunshineTitle(rest.title.rendered);
@@ -169,7 +85,6 @@ function Works() {
         }
         content()
     }, [])
-
     return (
         <div>
             <div className='container-fluid' id='works'>
@@ -193,7 +108,13 @@ function Works() {
                                 </div>
                                 <div className="album-content">
                                     <div className="album-title">
-                                        <h3>{unitedtitle}</h3>
+                                    {unitedTools && unitedTools.length > 0 && unitedTools.map((img, id) => {
+                                        return (
+                                            <div key={id}>
+                                                <img id='works-cards-img' src={img.guid} className="img-fluid" alt=''></img>                                       
+                                            </div>
+                                        )
+                                    })}
                                     </div>
                                 </div>
                             </div>

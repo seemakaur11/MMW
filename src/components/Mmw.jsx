@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../helper";
+import Customer from "./Customer";
 
 const Mmw = () => {
   const [mmwData, setmmwData] = useState([]);
@@ -155,6 +156,7 @@ const Mmw = () => {
             </div>
           );
         })}
+        <Customer/>
     </div>
   );
 };

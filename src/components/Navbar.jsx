@@ -46,7 +46,7 @@ function NavbarData() {
           >
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a href="/home" className="nav-link pl-4 pr-4  text-white">
+                <a href="/" className="nav-link pl-4 pr-4  text-white">
                   HOME
                 </a>
               </li>

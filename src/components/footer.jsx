@@ -21,8 +21,8 @@ const Footer = () => {
   }, []);
 
   return (
-    <div>
-      <div className="container-fluid pt-5 pl-5" id="footer-container">
+    <div style={{ backgroundColor: "black", color: "white" }}>
+      {/* <div className="container-fluid pt-5 pl-5" id="footer-container">
         <div className="row pt-4 pl-3">
           <div className="col-md-3" id="footer-s1">
             <h4>Victoria</h4>
@@ -148,8 +148,120 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-lg-8">
+            <div className="row">
+              <div className="col-lg-4">
+                <div className="py-3">
+                  <h4 id="fotterh4">Victoria</h4>
+                </div>
+                <div>
+                  <p>
+                    <i class="fa-solid fa-map-location"></i> 3/17 Perpetual St,
+                  </p>
+                  <h6 id="footerh6">TRUGANINA VIC 3029</h6>
+                </div>
+                <div className="row py-5">
+                  <div className="col-lg-12">
+                    <div  id="footer">
+                      <p>
+                        <i class="fa-solid fa-circle-dot"></i> Web Design Sydney
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-dot"></i> Web Design Brisbane
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-dot"></i> Web Design Perth
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-dot"></i> Web Design Newcastle
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="py-3">
+                  <h4 id="fotterh4">New South Wales</h4>
+                </div>
+                <div>
+                  <p>
+                    <i class="fa-solid fa-map-location"></i> 1/4A Bessemer St,
+                    Blacktown
+                  </p>
+                  <h6 id="footerh6">NSW 2148, Australia</h6>
+                </div>
+                <div className="row py-5">
+                  <div className="col-lg-12">
+
+                    <div  id="footer">
+                      <p>
+                        <i class="fa-solid fa-circle-dot"></i> Web Design Adelaide
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-dot"></i> Web Design Geelong
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-circle-dot"></i> Web Design Gold Coast
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div id="footerlinks">
+                  <h4 id="fotterh4" className="py-3">Quick Links</h4>
+                  <p>
+                    <i class="fa-solid fa-circle-check"></i> About Us
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"></i> FAQs
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"></i> Our Portfolio
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"></i> Services
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"></i> Blog
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="py-4" id="social-links">
+              <h5 className="mb-5">
+                Creating future-proof digital experiences is what we do. Tell us
+                about your needs, we’d love to collaborate with you.
+              </h5>
+              <h4 className="">info@makemywebsite.com.au</h4>
+
+              <a  href="https://www.facebook.com/makemywebsite.com.au">
+                <i className="fa-brands fa-facebook mr-5 pt-5"></i>
+              </a>
+              <a href="https://www.instagram.com/makemywebsite.mmw/">
+                <i className="fa-brands fa-instagram mr-5 pt-5"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/make-my-website-pty-ltd/">
+                <i className="fa-brands fa-linkedin-in mr-5 pt-5"></i>
+              </a>
+              <a href="https://twitter.com/makemywebsite16">
+                <i className="fa-brands fa-twitter-square mr-5 pt-5"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCWZs6OlOLKKFKQP7Ldn7jGQ">
+                <i className="fa-brands fa-youtube mr-5 pt-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+
   );
 };
 export default Footer;
