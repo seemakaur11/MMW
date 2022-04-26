@@ -51,25 +51,25 @@ export const testimonials = async () => {
         //    array.map((id) =>{
         //    })
         // });
-      
-        
+
+
         //     console.log("JSON=======>",json)
     } catch (error) {
         console.log("error ==>", error);
     }
-    ///about///
-    export const aboutData = async () => {
-        try {
-            const response = await fetch('https://makemywebsiteaustralia.com.au/mmw/wp-json/mo/v1/content/1227')
-            const json = await response.json();
-            return json;
-        }
-        catch (error) {
-            console.log("error ==>", error)
-        }
-    }
-
-
-
-
 }
+///about///
+export const aboutData = async () => {
+    try {
+        const response = await fetch('https://makemywebsiteaustralia.com.au/mmw/wp-json/mo/v1/content/1227')
+        const json = await response.json();
+        return json;
+    }
+    catch (error) {
+        console.log("error ==>", error)
+    }
+}
+
+
+
+

@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import NavbarData from "./components/Navbar";
 import About from "./components/About";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 
 function App() {
   return (
