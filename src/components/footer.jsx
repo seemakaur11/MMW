@@ -122,7 +122,7 @@ const Footer = () => {
               clientLogo.map((img, id) => {
                 return (
                   <div key={id}>
-                    <img src={img.guid} alt="client-image" id="client" />
+                    <img src={img.guid} alt="client" id="client" />
                   </div>
                 );
               })}
@@ -132,7 +132,7 @@ const Footer = () => {
               googleLogo.map((img, id) => {
                 return (
                   <div key={id}>
-                    <img src={img.guid} alt="client-image" id="google" />
+                    <img src={img.guid} alt="client" id="google" />
                   </div>
                 );
               })}
