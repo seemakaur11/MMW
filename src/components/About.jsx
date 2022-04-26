@@ -3,11 +3,6 @@ import Aboutstory from "./Aboutstory";
 import Aboutvideo from "./Aboutvideo";
 
 function About() {
-<<<<<<< HEAD
-    return (
-        <div></div>
-    )
-=======
   return (
     <div>
       <div className="container-fluid py-5 pl-5" id="about-container">
@@ -53,7 +48,6 @@ function About() {
       <Aboutvideo />
     </div>
   );
->>>>>>> 4e396789b84e5b27d6765c76207377ab6935fa8f
 }
 
 export default About;

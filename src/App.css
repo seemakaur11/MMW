@@ -383,15 +383,12 @@
 #mmw-content-div {
   background-color: black;
   opacity: 0.7;
-<<<<<<< HEAD
 }
 
 #mmw-content-div h1 {
-=======
   overflow: hidden;
   }
   #mmw-content-div h1{
->>>>>>> 4e396789b84e5b27d6765c76207377ab6935fa8f
   padding-left: 25px;
   padding-top: 10px;
   font-weight: bold;
@@ -463,9 +460,6 @@
   margin-top: -3rem;
   margin-right: -4rem;
 }
-
-
-
 
 #footer-container-logo-para {
   background-color: #000000ed;
@@ -665,7 +659,6 @@
   position: absolute;
   bottom: 0;
   text-transform: uppercase;
-<<<<<<< HEAD
 
   background: black;
   opacity: 0.7;
@@ -725,10 +718,7 @@
 #customername {
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
-}
-=======
-   
-    background: black;
+   background: black;
     opacity: 0.7;
   }
   .album-img img{
@@ -830,4 +820,31 @@
     align-items: center;
     color: #fff;
   }
->>>>>>> 4e396789b84e5b27d6765c76207377ab6935fa8f
+
+  /* about video css */
+  #about-video{
+    width: 100%;
+    opacity: 0.6;
+}
+  #about-video-container{
+    position: relative;
+  }
+  #video-para{
+      position: absolute;
+      top: 20%;
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+  #video-para h1{
+    font-size: 6rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#video-para p{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+   color: rgb(61, 58, 58);
+}
+
+
