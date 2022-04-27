@@ -1,4 +1,5 @@
 import React from "react";
+import AboutSlider from "./AboutSlider";
 import Aboutstory from "./Aboutstory";
 import Aboutvideo from "./Aboutvideo";
 import { aboutData } from "../helper";
@@ -45,6 +46,7 @@ function About() {
           </div>
         </div>
       </div>
+      <AboutSlider/>
       <Aboutstory />
       <Aboutvideo />
     </div>

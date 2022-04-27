@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Lottie from "lottie-react";
 import WebDesign from "../animation/WebDesign.json";
 import DigitalMarketing from "../animation/DigitalMarketing.json";
@@ -6,25 +6,75 @@ import Branding from "../animation/Branding.json";
 import EmailHost from "../animation/EmailHost.json";
 import Photography from "../animation/Photography.json";
 import CustomerCare from "../animation/CustomerCare.json";
+import { contentData } from '../helper';
 
 function Service() {
+    const [title, setTitle] = useState([]);
+    const [serviceP, setServiceP] = useState([]);
+    const [card1, setCard1] = useState([]);
+    const [card2, setCard2] = useState([]);
+    const [card3, setCard3] = useState([]);
+    const [card4, setCard4] = useState([]);
+    const [card5, setCard5] = useState([]);
+    const [card6, setCard6] = useState([]);
+
+    useEffect(() => {
+        async function service() {
+            const serviceData = await contentData();
+            //title
+            const filterTitle = serviceData.filter((data) => data.meta_key === "service_title" && data);
+            setTitle(filterTitle);
+            //paragraph
+            const filterP = serviceData.filter((data) => data.meta_key === "service_title_p" && data);
+            setServiceP(filterP);
+            //card1
+            const filterCard1 = serviceData.filter((data) => data.meta_key === "service_card_1" && data);
+            setCard1(filterCard1);
+            //card2
+            const filterCard2 = serviceData.filter((data) => data.meta_key === "service_card_2" && data);
+            setCard2(filterCard2);
+            //card3
+            const filterCard3 = serviceData.filter((data) => data.meta_key === "service_card_3" && data);
+            setCard3(filterCard3);
+            //card3
+            const filterCard4 = serviceData.filter((data) => data.meta_key === "service_card_4" && data);
+            setCard4(filterCard4);
+            //card3
+            const filterCard5 = serviceData.filter((data) => data.meta_key === "service_card_5" && data);
+            setCard5(filterCard5);
+            //card3
+            const filterCard6 = serviceData.filter((data) => data.meta_key === "service_card_6" && data);
+            setCard6(filterCard6);
+        }
+        service()
+    }, [])
     return (
         <div>
             <section id="ourServiceMain">
                 <div className='container py-5'>
                     <div className='row'>
-                      
-                            <div className='col-md-10'>
-                                <h1 id="serviceH1">Our Services</h1>
-                                <p id="serviceP">Our focus is on designing stunning, professional, 
-                                and optimised<br></br> websites to help you meet your business goals and succeed online.</p>
+                        <div className='col-md-10'>
+                            {title && title.length > 0 && title.map((head, id) => {
+                                return (
+                                    <div key={id}>
+                                        <h1 id="serviceH1">{head.meta_value}</h1>
+                                    </div>
+                                )
+                            })}
+                            {serviceP && serviceP.length > 0 && serviceP.map((head, id) => {
+                                return (
+                                    <div key={id}>
+                                        <p id="serviceP">{head.meta_value}</p>
+                                    </div>
+                                )
+                            })}
+
+                        </div>
+                        <div className='col-md-2 pt-5 '>
+                            <div id="viewBtn1">
+                                <button id="viewBtn">VIEW ALL SERVICES</button>
                             </div>
-                            <div className='col-md-2 pt-5 '>
-                                <div id="viewBtn1">
-                                    <button id="viewBtn">VIEW ALL SERVICES</button>
-                                </div>
-                            </div>
-                    
+                        </div>
                     </div>
                     <div className='row py-4' id="web-animation">
                         <div className='col-md-4 mb-5'>
@@ -37,10 +87,13 @@ function Service() {
                                         </div>
                                     </div>
                                     <div className="flip-card-back">
-                                        <p className='py-5' id="webParagraph">Make My Website embraces technological advancement and puts forth what’s the best for your brand. Your online
-                                            presence is important to your business,
-                                            and to us for it exhibits our passion
-                                            and creativity.</p>
+                                        {card1 && card1.length > 0 && card1.map((card, id) => {
+                                            return (
+                                                <div key={id}>
+                                                    <p className='py-5' id="webParagraph">{card.meta_value}</p>
+                                                </div>
+                                            )
+                                        })}
                                         <button id="webBtn">READ MORE</button>
                                     </div>
                                 </div>
@@ -56,9 +109,13 @@ function Service() {
                                         </div>
                                     </div>
                                     <div className="flip-card-back">
-                                        <p className='py-5' id="webParagraph">Even the best of websites without a good reach,
-                                            drop bland into the market since it gets
-                                            no audience to avail the purposes it is built for.</p>
+                                        {card2 && card2.length > 0 && card2.map((card, id) => {
+                                            return (
+                                                <div key={id}>
+                                                    <p className='py-5' id="webParagraph">{card.meta_value}</p>
+                                                </div>
+                                            )
+                                        })}
                                         <button id="webBtn">READ MORE</button>
                                     </div>
                                 </div>
@@ -74,11 +131,13 @@ function Service() {
                                         </div>
                                     </div>
                                     <div class="flip-card-back">
-                                        <p className='py-5' id="webParagraph">Branding in itself takes a
-                                            lot of understanding of brand values and the identity
-                                            you want the world to remember you with as a brand.
-                                            Branding has various realms including designing logos, business cards
-                                        </p>
+                                        {card3 && card3.length > 0 && card3.map((card, id) => {
+                                            return (
+                                                <div key={id}>
+                                                    <p className='py-5' id="webParagraph">{card.meta_value}</p>
+                                                </div>
+                                            )
+                                        })}
                                         <button id="webBtn">READ MORE</button>
                                     </div>
                                 </div>
@@ -94,11 +153,13 @@ function Service() {
                                         </div>
                                     </div>
                                     <div class="flip-card-back">
-                                        <p className='py-5' id="webParagraph">Your business’s online address is what is your base for starting everything.
-                                            This address is nothing but your web hosting i.e.
-                                            the space you have rented on the internet to store and
-                                            showcase your business’s projects, deliverables and content.
-                                        </p>
+                                        {card4 && card4.length > 0 && card4.map((card, id) => {
+                                            return (
+                                                <div key={id}>
+                                                    <p className='py-5' id="webParagraph">{card.meta_value}</p>
+                                                </div>
+                                            )
+                                        })}
                                         <button id="webBtn">READ MORE</button>
                                     </div>
                                 </div>
@@ -114,11 +175,13 @@ function Service() {
                                         </div>
                                     </div>
                                     <div class="flip-card-back">
-                                        <p className='py-5' id="webParagraph">Photography & Videography is a medium to visually represent your business.
-                                            Make My Website and Make My Memories
-                                            work collaboratively with a visionary
-                                            approach to enhance your brand presence.
-                                        </p>
+                                        {card5 && card5.length > 0 && card5.map((card, id) => {
+                                            return (
+                                                <div key={id}>
+                                                    <p className='py-5' id="webParagraph">{card.meta_value}</p>
+                                                </div>
+                                            )
+                                        })}
                                         <button id="webBtn">READ MORE</button>
                                     </div>
                                 </div>
@@ -134,10 +197,13 @@ function Service() {
                                         </div>
                                     </div>
                                     <div class="flip-card-back">
-                                        <p className='py-5' id="webParagraph">Support is highly crucial when running a website for your
-                                            business and it is not feasible to handle all of it by yourself.
-                                            Offering support for a domain and running its various functionalities
-                                            optimally requires skill, expertise, and experience.</p>
+                                        {card6 && card6.length > 0 && card6.map((card, id) => {
+                                            return (
+                                                <div key={id}>
+                                                    <p className='py-5' id="webParagraph">{card.meta_value}</p>
+                                                </div>
+                                            )
+                                        })}
                                         <button id="webBtn">READ MORE</button>
                                     </div>
                                 </div>
