@@ -1,6 +1,7 @@
 import React from "react";
 import Aboutstory from "./Aboutstory";
 import Aboutvideo from "./Aboutvideo";
+import { aboutData } from "../helper";
 
 function About() {
   return (

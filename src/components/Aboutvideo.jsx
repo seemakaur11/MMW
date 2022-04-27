@@ -1,45 +1,88 @@
 import React, { useEffect, useState } from "react";
-import { fetchData } from "../helper";
+import { fetchData, aboutData } from "../helper";
 
 function Aboutvideo() {
-  const [aboutVideoData, setAboutVideoData] = useState([]);
+  ///vedio_section///
+  const [aboutVideo, setAboutVideo] = useState([]);
 
   useEffect(() => {
     async function images() {
-      const aboutVideoDatas = await fetchData();
-      const filtervideoDatas = aboutVideoDatas.filter(
+      const aboutVideo = await fetchData();
+      const filtervideo = aboutVideo.filter(
         (data) => data.ID === "34528" && data
       );
-      setAboutVideoData(filtervideoDatas);
+      setAboutVideo(filtervideo);
     }
     images();
+  }, []);
+  ///content_section///
+  const [vedioText, setVedioText ] = useState([])
+  const [vedioText1, setVedioText1 ] = useState([])
+  const [vedioTitle, setVedioTitle ] = useState([])
+
+  useEffect(() => {
+    async function content() {
+      const vedioText = await aboutData();
+      const filtervedioText =vedioText.filter(
+        (data) => data.meta_key === "do_paragraph" && data
+      );
+      setVedioText(filtervedioText);
+      const filtervedioText1 =vedioText.filter(
+        (data) => data.meta_key === "do_paragraph1" && data
+      );
+      setVedioText1(filtervedioText1);
+      const filtervedioTitle =vedioText.filter(
+        (data) => data.meta_key === "do_title" && data
+      );
+      setVedioTitle(filtervedioTitle);
+      
+    }
+    content();
   }, []);
 
   return (
     <div>
-      {aboutVideoData &&
-        aboutVideoData.length > 0 &&
-        aboutVideoData.map((img, id) => {
+      {aboutVideo &&
+        aboutVideo.length > 0 &&
+        aboutVideo.map((img, id) => {
           return (
             <div key={id} id="about-video-container">
-              <video loop muted autoPlay controls="" id="about-video">
+              <video loop muted autoPlay controls="" id="about-video" height='100%' width='100%'>
                 <source src={img.guid} type="video/mp4"></source>
               </video>
               <div id="video-para">
-                <h1>What We Do</h1>
+                <h1>
+                {vedioTitle &&
+                vedioTitle.length > 0 &&
+                vedioTitle.map((head, id) => {
+                  return (
+                    <div key={id}>
+                      {head.meta_value}
+                    </div>
+                  );
+                })}
+                </h1>
                 <p>
-                  Make My Website offers end-to-end strategic web solutions with
-                  a focus on customer satisfaction. Our mission is simple- to
-                  build you a website that aligns with your goals, take a
-                  strategic route, and market you online. With over 400+ reviews
-                  on Google, Facebook, Oneflare, and Word of Mouth, we have been
-                  rated highly credible for the work we do. We infuse creativity
-                  in your online space and make it a captivating experience for
-                  the users on the world wide web.
+                {vedioText &&
+                vedioText.length > 0 &&
+                vedioText.map((head, id) => {
+                  return (
+                    <div key={id}>
+                      {head.meta_value}
+                    </div>
+                  );
+                })}
                 </p>
                 <p>
-                  Are you looking for a cutting-edge website? We are here to
-                  help!
+                {vedioText1 &&
+                vedioText1.length > 0 &&
+                vedioText1.map((head, id) => {
+                  return (
+                    <div key={id}>
+                      {head.meta_value}
+                    </div>
+                  );
+                })}
                 </p>
               </div>
             </div>

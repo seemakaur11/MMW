@@ -90,18 +90,18 @@ overflow: hidden;
 }
 /* about story */
 #about-story{
-    padding-top: 6rem;
-    padding-bottom: 4rem;
-    font-size: 7rem;
+  
+    font-size: 5em;
     text-align: center;
     
 }
 #about-para1{
-    padding-top: 48px;
-    padding-left: 5rem;
-    font-size: 18px;
-    word-spacing: 3px;
-    line-height:28px ;
+    color: #545454;
+    font-family: 'Josefin Slab', sans-serif;
+   font-size: 1.2rem;
+                                                                                
+    font-weight: 800;
+    line-height: 1.5em;
 }
 #about-para2{
     padding-top: 15px;

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { fetchData } from "../helper";
+import { fetchData, aboutData } from "../helper";
 
 const Aboutstory = () => {
+  ///images//
   const [aboutImage, setAboutData] = useState([]);
   useEffect(() => {
     async function images() {
@@ -12,29 +13,72 @@ const Aboutstory = () => {
       setAboutData(filteraboutData);
     }
     images();
-  }, []);
+  }, [])
+  ///contents////
+  const [aboutContent, setAboutContent] = useState([])
+  const [aboutContent1, setAboutContent1] = useState([])
+  const [ourTitle, setOurTitle] = useState([])
+  useEffect(() => {
+    async function images() {
+      const aboutcontent = await aboutData();
+      const filteraboutcontent = aboutcontent.filter(
+        (data) => data.meta_key === "our_tagline" && data
+      );
+      setAboutContent(filteraboutcontent);
+      const filteraboutcontent1 = aboutcontent.filter(
+        (data) => data.meta_key === "our_tagline1" && data
+      );
+      setAboutContent1(filteraboutcontent1);
+      
+      const filterourTitle = aboutcontent.filter(
+        (data) => data.meta_key === "Our_title" && data
+      );
+      setOurTitle(filterourTitle);
+    }
+    images();
+  }, [])
+
   return (
     <div>
       <div className="container-fluid pb-5">
-        <h1 id="about-story">Our Story</h1>
+        <h1 id="about-story">
+          {ourTitle &&
+            ourTitle.length > 0 &&
+            ourTitle.map((head, id) => {
+              return (
+                <div key={id}>
+                  {head.meta_value}
+                </div>
+              );
+            })}
+        </h1>
+        <div className="container">
         <div className="row pb-5">
-          <div className="col-md-6">
+          <div className="col-lg-6 py-5">
             <p id="about-para1">
-              What first started as an idea has now transformed into a vision
-              and as we continue to expand our horizons- our commitment towards
-              providing high standards of service has just gotten stronger. As a
-              digital agency with clients in every single state and territory of
-              Australia, our establishment as a renowned company has been
-              worthwhile.
+              {aboutContent &&
+                aboutContent.length > 0 &&
+                aboutContent.map((head, id) => {
+                  return (
+                    <div key={id}>
+                      {head.meta_value}
+                    </div>
+                  );
+                })}
             </p>
-            <p id="about-para2">
-              Our dynamic team has delivered 600+ websites, created ingenious
-              strategies and helped numerous businesses in this digital space.
-              We are ready to take up any challenge and strive to provide the
-              best customer service.
+            <p className="pt-3" id="about-para1">
+              {aboutContent1 &&
+                aboutContent1.length > 0 &&
+                aboutContent1.map((head, id) => {
+                  return (
+                    <div key={id}>
+                      {head.meta_value}
+                    </div>
+                  );
+                })}
             </p>
           </div>
-          <div className="col-md-6 py-5">
+          <div className="col-lg-6 py-5">
             {aboutImage &&
               aboutImage.length > 0 &&
               aboutImage.map((img, id) => {
@@ -45,6 +89,7 @@ const Aboutstory = () => {
                 );
               })}
           </div>
+        </div>
         </div>
       </div>
     </div>
