@@ -16,10 +16,10 @@
    
  }
  #about-container{
-background-color:  rgb(75, 72, 72);
-color: white;
-overflow: hidden;
- }
+    background-color:  rgb(75, 72, 72);
+    color: white;
+     overflow: hidden;
+     }
  #about-rcircle #about-welcome-shape-1{
     right: -25%;
     bottom: -120px;
@@ -113,3 +113,18 @@ overflow: hidden;
 #about-mystory{
    margin-right: 2rem;
 }
+/* about slider */
+#carosel11 {
+    position: relative;
+  }
+  #crouselSlide{
+    position: absolute;
+    top: 16%;
+  }
+  #InfiniteH3{
+    color: white;
+    font-size: 18px;
+  }
+  #infiniteAnchor{
+    color: blue;
+  }
